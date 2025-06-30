@@ -14,13 +14,28 @@ export default function ChooseMode({ onSelect }) {
         >
           Send in 3 Steps
         </button>
+        
         <button
           onClick={() => onSelect('oneGo')}
           style={{
-            width: '100%', padding: '0.75rem', borderRadius: '8px', backgroundColor: '#10b981', color: '#ffffff', fontSize: '1rem', fontWeight: '600', border: 'none', cursor: 'pointer'
+            width: '100%', padding: '0.75rem', marginBottom: '1rem', borderRadius: '8px', backgroundColor: '#10b981', color: '#ffffff', fontSize: '1rem', fontWeight: '600', border: 'none', cursor: 'pointer'
           }}
         >
           Send in One Go
+        </button>
+
+        <button
+          onClick={() => onSelect('ongoing')}
+          style={{ width: '100%', padding: '0.75rem', marginBottom: '1rem', borderRadius: '8px', backgroundColor: '#facc15', color: '#111827', fontSize: '1rem', fontWeight: '600', border: 'none', cursor: 'pointer' }}
+        >
+          Create Ongoing Campaign
+        </button>
+
+        <button
+          onClick={() => onSelect('viewCampaigns')}
+          style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', backgroundColor: '#00aeff', color: '#111827', fontSize: '1rem', fontWeight: '600', border: 'none', cursor: 'pointer' }}          
+        >
+          View Campaigns
         </button>
       </div>
     </div>

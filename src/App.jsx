@@ -5,6 +5,8 @@ import Step1CreateCampaign from './pages/OrderSteps/Step1CreateCampaign'
 import Step2AddContacts from './pages/OrderSteps/Step2AddContacts'
 import Step3EditCampaign from './pages/OrderSteps/Step3EditCampaign'
 import OneGoPage           from './pages/OrderSteps/OneGoPage'
+import OngoingCampaignPage from './pages/OrderSteps/OngoingCampaignPage'
+import ViewCampaigns from './pages/OrderSteps/ViewCampaigns'
 
 export default function App() {
   // “mode” is null until the user picks one of the two options
@@ -98,7 +100,14 @@ export default function App() {
       />
     )
   }
-  
+
+  if (mode === 'ongoing') {
+    return <OngoingCampaignPage onBack={resetFlow} />
+  }
+
+  if (mode === 'viewCampaigns') {
+    return <ViewCampaigns onBack={resetFlow} />
+  }
 
   return null
 }
