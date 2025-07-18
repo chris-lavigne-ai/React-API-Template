@@ -37,6 +37,15 @@ export default function ChooseMode({ onSelect }) {
         >
           View Campaigns
         </button>
+
+        <button
+          onClick={() => onSelect('contactList')}
+          style={{
+            width: '100%', padding: '0.75rem', borderRadius: '8px', backgroundColor: '#e11d48', color: '#fff', fontSize: '1rem', fontWeight: '600', border: 'none', cursor: 'pointer', marginTop: '1rem'
+          }}
+        >
+          Test Contact List
+        </button>
       </div>
     </div>
   )

@@ -1,0 +1,219 @@
+.contact-list-page {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.contact-table th, .contact-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.contact-table th {
+  background: #f4f4f4;
+}
+
+.contact-table tr:hover {
+  background: #f9f9f9;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border: none;
+  border-radius: 4px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.crm-actions {
+  margin: 1.5rem 0 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.close-btn {
+  background: #888;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.close-btn:hover {
+  background: #555;
+}
+
+.contact-modal {
+  max-height: 50vh;
+  overflow-y: auto;
+  width: 400px;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  margin-right: 2vw;
+}
+
+.contact-modal-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 1rem 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #1976d2;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.contact-info-main {
+  flex: 1;
+}
+
+.contact-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-company {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.98rem;
+  color: #1976d2;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 0.25rem;
+}
+
+.contact-actions-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafbfc;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 1.3rem;
+  cursor: pointer;
+  gap: 0.2rem;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+.action-btn span {
+  font-size: 0.85rem;
+  color: #222;
+}
+.action-btn:hover {
+  color: #0d47a1;
+}
+
+.contact-details-section {
+  padding: 1.5rem 2rem 1rem 2rem;
+  flex: 1;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.actions-link {
+  color: #1976d2;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #444;
+}
+
+.selected-row {
+  background: #e3f0fc !important;
+  border-left: 4px solid #1976d2;
+}
+
+@media (max-width: 500px) {
+  .contact-modal {
+    width: 98vw;
+    min-width: unset;
+    padding: 0;
+  }
+  .contact-modal-header, .contact-actions-row, .contact-details-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+} 

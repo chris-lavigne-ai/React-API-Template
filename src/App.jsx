@@ -7,6 +7,7 @@ import Step3EditCampaign from './pages/OrderSteps/Step3EditCampaign'
 import OneGoPage           from './pages/OrderSteps/OneGoPage'
 import OngoingCampaignPage from './pages/OrderSteps/OngoingCampaignPage'
 import ViewCampaigns from './pages/OrderSteps/ViewCampaigns'
+import ContactListPage from './pages/OrderSteps/ContactListPage'
 
 export default function App() {
   // “mode” is null until the user picks one of the two options
@@ -107,6 +108,10 @@ export default function App() {
 
   if (mode === 'viewCampaigns') {
     return <ViewCampaigns onBack={resetFlow} />
+  }
+
+  if (mode === 'contactList') {
+    return <ContactListPage onBack={resetFlow} />
   }
 
   return null
